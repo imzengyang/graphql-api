@@ -6,7 +6,7 @@ import schema from './graphql';
 
 const app = express();
 
-mongoose.connect('mongodb://imzack:123456@ds149353.mlab.com:49353/graphapi')
+mongoose.connect('mongodb://<user>:123456@ds149353.mlab.com:49353/graphapi')
 const db = mongoose.connection;
 
 db.on('error' ,()=>{console.log('Failed to connect to database')})
